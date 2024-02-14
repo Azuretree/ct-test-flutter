@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Flutter App',
+      title: '청력테스트',
       home: WebViewPage(),
     );
   }
@@ -107,7 +107,7 @@ class _WebViewPageState extends State<WebViewPage> {
         },
       )
       ..loadRequest(Uri.parse(
-          'https://ct-test-bay.vercel.app/testpage?name=%25E3%2585%2587%25EB%25A1%259C%25EC%2598%25AC&checked=true'));
+          'https://ct-test-bay.vercel.app/'));
 
     if (controller.platform is AndroidWebViewController) {
       AndroidWebViewController.enableDebugging(true);
